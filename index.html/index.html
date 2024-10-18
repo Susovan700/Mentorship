@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SLIET Mentorship Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mentors">Mentors</a></li>
+                <li><a href="#booking">Book a Session</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to SLIET Mentorship Platform</h2>
+            <p>Connect with faculty mentors for academic and career guidance.</p>
+        </section>
+
+        <section id="mentors">
+            <h2>Our Mentors</h2>
+            <div id="mentor-list"></div>
+        </section>
+
+        <section id="booking">
+            <h2>Book a Mentorship Session</h2>
+            <form id="booking-form">
+                <label for="mentor-select">Select a Mentor:</label>
+                <select id="mentor-select" required>
+                    <option value="">Choose a mentor</option>
+                </select>
+
+                <label for="date-select">Select a Date:</label>
+                <input type="date" id="date-select" required>
+
+                <label for="time-slot">Select a Time Slot:</label>
+                <select id="time-slot" required>
+                    <option value="">Choose a time slot</option>
+                </select>
+
+                <button type="submit">Book Session</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SLIET Mentorship Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
